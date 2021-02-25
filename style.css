@@ -53,3 +53,12 @@ label {
   display: block;
   margin-bottom: 0.5em;
 }
+
+.container{
+  text-align: center;
+}
+
+.date{
+  font-size: 300%;
+  font-family: 'Times New Roman';
+}
