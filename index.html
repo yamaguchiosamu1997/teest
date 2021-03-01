@@ -5,31 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ログイン</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      p {
+        font-size: 14px;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      .content {
+        background-color: #fff;
+        width: 600px;
+        margin: 10px auto;
+        border: 1px solid #d1d1d1;
+        padding: 30px;
+      }
+
+      input {
+        border: none;
+        border-bottom: 1px solid #d1d1d1;
+        font-size: 1.2em;
+        width: 100%;
+        padding: 8px;
+      }
+
+      button {
+        width: 100%;
+        background-color: #2096f3;
+        color: #fff;
+        padding: 15px;
+        border: 0;
+        border-radius: 3px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+      }
+
+      .required {
+        color: #f33;
+        font-size: 0.9em;
+        padding: 3px;
+        background-color: #fee;
+        font-weight: bold;
+      }
+
+      body {
+        background-color: #fafafa;
+      }
+
+      .control {
+        margin-bottom: 3em;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.5em;
+      }
+
+      /* js日付 */
+
+      .container {
+        text-align: center;
+      }
+
+      .date {
+        font-size: 300%;
+        font-family: "Times New Roman";
+      }
+    </style>
   </head>
   <body>
-      <div class="container">
-          <script>
-              //js日付けを表示する
-              const today = new Date();
-              const todayHtml = today.getFullYear() + "/" + (today.getMonth()+1)
-              + "/" + today.getDate();
-              document.write('<p class= "date">' + todayHtml + "</p>");           
-          </script>
-      </div>
+    <div class="container">
+      <script>
+        //js日付けを表示する
+        const today = new Date();
+        const todayHtml =
+          today.getFullYear() +
+          "/" +
+          (today.getMonth() + 1) +
+          "/" +
+          today.getDate();
+        document.write('<p class= "date">' + todayHtml + "</p>");
+      </script>
+    </div>
     <div class="content">
       <h1>ログイン</h1>
       <p>ログインするには、次の必要項目をご記入ください</p>
       <div class="control">
-        <label for="mymail">メールアドレス <span class="required">必須</span></label>
+        <label for="mymail"
+          >メールアドレス <span class="required">必須</span></label
+        >
         <input id="mymail" type="email" name="mymail" />
       </div>
       <div class="control">
-        <label for="password">パスワード <span class="required">必須</span></label>
+        <label for="password"
+          >パスワード <span class="required">必須</span></label
+        >
         <input type="password" name="password" />
       </div>
       <div class="control">
-        <button type="submit">送信</button>
+        <a href="intoro.html"><button type="submit">送信</button></a>
       </div>
     </div>
   </body>
