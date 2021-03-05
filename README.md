@@ -1,7 +1,7 @@
-# teest
 HTMLとCSSとJSの基本コード書いてみよう
+
 ・indexページでログインページ作成
-  html:5 + tab での成形し、簡単なHTMLの編集
+  html:5 + tab での成形し簡単なHTMLの編集
   CSSは内部参照し見た目の成形（要素の区分わけ）
   送信ボタンでintoroページにジャンプ
 
